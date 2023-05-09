@@ -6,7 +6,7 @@
 <% count += 1;%>
 <html>
 <head>
-    <title><%= "some title" %></title>
+    <title><%= "index" %></title>
 </head>
 <body>
     <h1>Implicit Objects in action</h1>

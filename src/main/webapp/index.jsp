@@ -6,9 +6,12 @@
 <% count += 1;%>
 <html>
 <head>
-    <title><%= "some title" %></title>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="Welcome to my site!" />
+    </jsp:include>
 </head>
 <body>
+
     <h1>Implicit Objects in action</h1>
     <p>Path: <%= request.getRequestURI()%></p>
     <p>Query String: <%= request.getQueryString()%></p>
@@ -24,5 +27,6 @@
     <c:if test="false">
         <h1>single letter variable names are good</h1>
     </c:if>
+
 </body>
 </html>

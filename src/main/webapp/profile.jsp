@@ -1,16 +1,19 @@
 <%--
   Created by IntelliJ IDEA.
-  User: sarahbrightman
+  User: Gonzalo
   Date: 5/9/23
-  Time: 10:48 AM
+  Time: 1:33 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="Profile"/>
+    </jsp:include>
 </head>
 <body>
-  
-  </body>
+<jsp:include page="partials/navbar.jsp"/>
+<h1>Viewing your profile</h1>
+</body>
 </html>
